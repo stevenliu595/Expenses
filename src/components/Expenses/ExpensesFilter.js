@@ -4,9 +4,6 @@ import "./ExpensesFilter.css";
 
 const ExpensesFilter = (props) => {
   const selectChangeHandler = (event) => {
-    event.preventDefault();
-    console.log(event.target.value, ": selected year in child");
-
     props.onSelectYear(event.target.value);
   };
 
